@@ -1,0 +1,12 @@
+{%- assign heroclass = "is-dark is-medium is-bold has-text-centered" | split:" " %}
+{%- if page.rainbow_hero %}{% assign heroclass = heroclass | push: "rainbow" %}{% endif %}
+{%- assign heroclass = heroclass | join: " " %}
+{%- assign imagesource = metadata.bulmatown_theme.image_sizes.hero | default: "image" %}
+{%- render "bulmatown/hero",
+    class: heroclass,
+    cover: page[imagesource],
+    title: title,
+    title_class: "has-text-light",
+    subtitle: subtitle,
+    subtitle_class: "has-text-light"
+%}

@@ -26,6 +26,8 @@
     opacity: 0.8;
     width: 95%;
     max-width: 400px;
+    transition: opacity 0.3s;
+
     &::-webkit-search-decoration {
       -webkit-appearance: none;
     }

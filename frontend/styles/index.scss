@@ -12,28 +12,24 @@ $primary: rgb(17, 81, 92) !default;
 } @else if $theme_variation == fuchsia {
   $primary: rgb(81, 17, 92);
 } @else if $theme_variation == fineart {
-  $primary: rgb(37, 58, 53);
+  $primary: rgb(35, 51, 56);
 }
 
 $dark: $primary !default;
 $text: #272421 !default;
+$red: rgb(216, 34, 80) !default;
 $link: lighten($primary, 8%) !default;
+$link-hover: $primary !default;
+$code: desaturate($primary, 40%);
 $code-background: #f8f8f8 !default;
-$pre-background: $code-background !default;
+$pre-background: $code-background;
+$footer-background-color: lighten(desaturate($primary, 55%), 75%) !default;
+$footer-padding: 3rem 1.5rem 5rem !default;
 
 $body-size: 18px !default;
 $fullhd-enabled: false !default;
 $box-padding: 1.4rem !default;
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.highlight {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+$footer-top-margin: 4rem !default;
 
 @import "~fork-awesome";
 @import "~bulma/bulma";
@@ -50,6 +46,67 @@ $box-padding: 1.4rem !default;
   }
 }
 
+.container {
+  @include touch {
+    /* This fixes a horizontal overscroll bug in iOS Safari */
+    overflow: hidden;
+  }
+  @include mobile {
+    main & {
+      /* Padding here fixes missing box-shadows */
+      padding-top: 24px;
+      margin-top: -24px !important;
+      padding-bottom: 24px;
+      margin-bottom: -24px;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+}
+
+nav > .container {
+  @include touch {
+    overflow: visible;
+  }
+}
+
+@supports (text-decoration-style: dotted) {
+  main a:not(.button) {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: lighten(desaturate($primary, 50%), 40%);
+  }
+}
+.is-decorationless {
+  text-decoration: none !important;
+}
+a {
+  transition: color 0.3s;
+}
+.navbar-item, .button {
+  transition: background 0.3s;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.highlight {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.document-entry > figure {
+  margin-top: -$box-padding;
+  img {
+    border-top-left-radius: $radius-large;
+    border-top-right-radius: $radius-large;
+  }
+}
+
 article .author {
   color: lighten($text, 20%);
 
@@ -60,6 +117,26 @@ article .author {
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 0.5rem;
+  }
+}
+
+.content ul.pagination {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+footer.footer {
+  margin-top: $footer-top-margin;
+
+  @include mobile {
+    .column:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .logo {
+    color: $black;
+    font-weight: bold;
   }
 }
 

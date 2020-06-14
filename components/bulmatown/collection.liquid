@@ -1,26 +1,33 @@
 <div class="columns is-multiline">
   {% for document in collection %}
+    {%- assign imagesource = metadata.bulmatown_theme.image_sizes.embed | default: "image" %}
     <div class="column is-full-mobile is-full-tablet is-half-desktop">
       <div class="box document-entry">
         {% if document.image %}
           <figure class="image is-5by3">
             <a href="{{ document.url }}">
-              <img src="{{ document.image }}" />
+              <img src="{{ document[imagesource] }}" />
             </a>
           </figure>
         {% endif %}
     
         <div class="content">
-          <h3><a href="{{ document.url }}">{{ document.title | smartify }}</a></h3>
+          <h3>
+            <a class="is-decorationless" href="{{ document.url }}">
+              {{ document.title | smartify }}
+            </a>
+          </h3>
     
           {% if document.subtitle and document.subtitle != "" %}
             {% assign excerpt = document.subtitle | smartify | prepend: "<p>" | append: "</p>" %}
+          {% elsif document.description and document.description != "" %}
+            {% assign excerpt = document.description | smartify | prepend: "<p>" | append: "</p>" %}
           {% else %}
             {% assign excerpt = document.excerpt %}
           {% endif %}
           {{ excerpt }}
           
-          <p>
+          <p class="mt-5">
             {% render "bulmatown/button", type: "primary", label: "Continue Reading", link: document.url, icon: "file-text" %}
           </p>
         </div>

@@ -2,13 +2,11 @@
 layout: default
 ---
 
-{% render "bulmatown/hero",
-    class: "is-dark is-medium is-bold has-text-centered",
-    cover: page.image,
+{% render "bulmatown/hero_wrapper",
     title: site.metadata.title,
-    title_class: "has-text-light",
     subtitle: site.metadata.description,
-    subtitle_class: "has-text-light"
+    page: page,
+    metadata: site.metadata
 %}
 
 <section class="section">
