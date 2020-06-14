@@ -3,9 +3,20 @@
 @import "~bulmatown/frontend/styles";
 */
 
-$text: #272421 !default;
+$theme_variation: default !default;
+
 $primary: rgb(17, 81, 92) !default;
+
+@if $theme_variation == rust {
+  $primary: rgb(92, 32, 17);
+} @else if $theme_variation == fuchsia {
+  $primary: rgb(81, 17, 92);
+} @else if $theme_variation == fineart {
+  $primary: rgb(37, 58, 53);
+}
+
 $dark: $primary !default;
+$text: #272421 !default;
 $link: lighten($primary, 8%) !default;
 $code-background: #f8f8f8 !default;
 $pre-background: $code-background !default;
