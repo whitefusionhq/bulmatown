@@ -1,0 +1,53 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-5">
+        <div class="logo">
+          {{ metadata.title}}
+        </div>
+
+        <h4>
+          {{ metadata.tagline }}
+        </h4>
+
+        <div class="mt-3">
+          Follow on Twitter: <strong><a href="https://twitter.com/{{ metadata.twitter }}">@{{ metadata.twitter }}</strong></a>
+        </div>
+
+        <div class="mt-6 is-size-7">
+          Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+        </div>
+
+      </div>
+      <div class="column is-4">
+        <h4>
+          Other <strong>Resources</strong>
+        </h4>
+
+        <div class="mt-5">
+          <a href="https://wikipedia.org">Wikipedia</a><br/>
+          <a href="https://archive.org/web/">Wayback Machine</a>
+        </div>
+      </div>
+      <div class="column is-3">
+        <h4>
+          <strong>Share</strong> on Social Media
+        </h4>
+
+        <div class="mt-5">
+          <a href="https://twitter.com/intent/tweet?url={{ url | uri_escape }}&via={{ metadata.twitter }}&text=Check%20out%20this%20awesome%20new%20site%20built%20with%20Bridgetown%20and%20Ruby%21&hashtags=SpinUpBridgetown%2CJamstack" class="button is-info">
+            <span class="icon"> <i class="fa fa-twitter is-size-5"></i> </span>
+            <span class="has-text-weight-bold">Tweet</span>
+          </a>
+        </div>
+
+        <div class="mt-6">
+          <a href="/feed.xml" class="button is-danger is-small">
+            <span class="icon"> <i class="fa fa-rss"></i> </span>
+            <span class="has-text-weight-bold">News Feed</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
