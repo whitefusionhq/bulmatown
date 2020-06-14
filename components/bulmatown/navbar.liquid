@@ -1,0 +1,20 @@
+<nav class="navbar {{ class }}">
+  <div class="navbar-brand">
+    {{ logo }}
+    <div class="navbar-burger burger" data-target="top-navbar" onclick="this.classList.toggle('is-active');document.querySelector('#top-navbar').classList.toggle('is-active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="top-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      {{ items_start }}
+    </div>
+
+    <div class="navbar-end">
+      {{ items_end }}      
+    </div>
+  </div>
+</nav>

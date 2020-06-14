@@ -1,0 +1,16 @@
+{%- assign classes = "button" | split: " " %}
+{%- if type %}
+{%- assign type_class = type | prepend: "is-" %}
+{%- assign classes = classes | push: type_class %}
+{%- endif %}
+{%- capture button_inner %}
+{%- if icon %}
+<span class="icon"><i class="fa fa-{{ icon }}"></i></span>
+{%- endif %}
+<span>{{ label }}</span>
+{%- endcapture %}
+{%- if link %}
+<a href="{{ link }}" class="{{classes | join: " "}}">{{ button_inner }}</a>
+{%- else %}
+<button class="{{classes | join: " "}}">{{ button_inner }}</button>
+{%- endif %}

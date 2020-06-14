@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% render "bulmatown/hero",
+    class: "is-dark is-medium is-bold has-text-centered",
+    cover: page.image,
+    title: site.metadata.title,
+    title_class: "has-text-light",
+    subtitle: site.metadata.description,
+    subtitle_class: "has-text-light"
+%}
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</section>

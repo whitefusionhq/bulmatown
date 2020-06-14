@@ -1,0 +1,16 @@
+<header class="hero {{ class }}"{% if cover %} style="background-image: url({{ cover }})"{% endif %}>
+  <div{% if cover %} class="cover-overlay"{% endif %}>
+    <div class="hero-body">
+      <div class="container is-fluid">
+        <h1 class="p-name title is-2 is-spaced {{ title_class }}">
+          {{ title | smartify }}
+        </h1>
+        {% if subtitle and subtitle != "" %}
+          <h2 class="p-summary subtitle {{ subtitle_class }}">
+            {{ subtitle | smartify }}
+          </h2>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

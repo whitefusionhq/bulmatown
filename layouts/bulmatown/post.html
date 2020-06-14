@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="h-entry">
+{%- assign heroclass = "is-dark is-medium is-bold has-text-centered" | split:" " %}
+{%- if page.rainbow_hero %}{% assign heroclass = heroclass | push: "rainbow" %}{% endif %}
+{%- assign heroclass = heroclass | join: " " %}
+{%- render "bulmatown/hero",
+    class: heroclass,
+    cover: page.image,
+    title: page.title,
+    title_class: "has-text-light",
+    subtitle: page.subtitle,
+    subtitle_class: "has-text-light"
+%}
+
+  <section class="section">
+    <div class="container">
+      {%- assign author = site.data.authors[page.author] %}
+      {%- if author %}
+        <div class="mb-6 author has-text-centered p-author">
+          <img src="{{ author.avatar }}" alt="{{ author.name }}" class="avatar u-photo" />
+          by <a href="/authors/{{ page.author }}/" class="has-text-weight-bold u-url p-name">{{ author.name }}</a>
+          on {{ page.date | date: "%B %-d, %Y" }}
+        </div>
+      {%- endif %}
+
+      <div class="content e-content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</article>

@@ -1,0 +1,21 @@
+{
+  "name": "bulmatown",
+  "version": "0.1.0",
+  "main": "frontend/javascript/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/bulmatown.git"
+  },
+  "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
+  "homepage": "https://www.bridgetownrb.com",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "frontend"
+  ],
+  "dependencies": {
+    "bridgetown-quick-search": "^1.0.3",
+    "bulma": "^0.9",
+    "fork-awesome": "^1.1.7"
+  }
+}

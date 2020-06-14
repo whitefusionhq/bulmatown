@@ -1,0 +1,57 @@
+/* Use in your app by simply adding to your app's index.scss:
+
+@import "~bulmatown/frontend/styles";
+*/
+
+$text: #272421 !default;
+$primary: rgb(17, 81, 92) !default;
+$dark: $primary !default;
+$link: lighten($primary, 8%) !default;
+$code-background: #f8f8f8 !default;
+$pre-background: $code-background !default;
+
+$body-size: 18px !default;
+$fullhd-enabled: false !default;
+$box-padding: 1.4rem !default;
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.highlight {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@import "~fork-awesome";
+@import "~bulma/bulma";
+@import "syntax.scss";
+
+@media (min-width: $widescreen) {
+  html {
+    font-size: $body-size + 1px;
+  }
+}
+@media (min-width: $widescreen + 200px) {
+  html {
+    font-size: $body-size + 2px;
+  }
+}
+
+article .author {
+  color: lighten($text, 20%);
+
+  .avatar {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+}
+
+@import "../../components/bulmatown/collection.scss";
+@import "../../components/bulmatown/hero.scss";
+@import "../../components/bulmatown/navbar.scss";

@@ -1,0 +1,52 @@
+.navbar {
+  @include touch {
+    .navbar-menu {
+      background-color: inherit;
+      .navbar-item, .navbar-link {
+        color: $white;
+      }
+      a.navbar-item:focus,
+      a.navbar-item:focus-within,
+      a.navbar-item:hover,
+      a.navbar-item.is-active,
+      .navbar-link:focus,
+      .navbar-link:focus-within,
+      .navbar-link:hover,
+      .navbar-link.is-active {
+        background-color: darken($dark, 5%);
+      }
+    }
+  }
+
+  .search-item input {
+    font-size: 1em;
+    height: 1.85em;
+    padding: 0.2em 0.6em;
+    background: white;
+    opacity: 0.8;
+    width: 95%;
+    max-width: 400px;
+    &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+    &::placeholder {
+      color: #888;
+      opacity: 1;
+    }
+  
+    border: none;
+    &:focus {
+      opacity: 1;
+    }
+  
+    @include desktop {
+      width: calc(9vw * 2);
+    }
+  }
+}
+
+bridgetown-search-results {
+  --link-color: #{$link};
+  --divider-color: #eee;
+  --text-color: #{$text};
+}

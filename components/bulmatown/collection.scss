@@ -1,0 +1,12 @@
+.document-entry {
+  figure {
+    margin-left: -$box-padding;
+    margin-right: -$box-padding;
+    &:not(:last-child) {
+      margin-bottom: $box-padding;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}

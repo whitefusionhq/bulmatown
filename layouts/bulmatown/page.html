@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{%- assign heroclass = "is-dark is-medium is-bold has-text-centered" | split:" " %}
+{%- if page.rainbow_hero %}{% assign heroclass = heroclass | push: "rainbow" %}{% endif %}
+{%- assign heroclass = heroclass | join: " " %}
+{%- render "bulmatown/hero",
+    class: heroclass,
+    cover: page.image,
+    title: page.title,
+    title_class: "has-text-light",
+    subtitle: page.subtitle,
+    subtitle_class: "has-text-light"
+%}
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</section>
