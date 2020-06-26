@@ -16,8 +16,6 @@ I write about topics that I care about and believe are important. I try to bring
 {% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
 
 {% if site.posts.size > 6 %}
-
-{: .mt-6 .has-text-centered}
-<a href="/posts/" class="button is-primary is-outlined is-small"><span>Previous Articles</span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a>
-
+  <a href="/posts/" class="button is-primary is-outlined is-small"><span>Previous Articles</span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a>
+  {: .mt-6 .has-text-centered}
 {% endif %}

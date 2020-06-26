@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  This is Groovy
-subtitle: Totally Awesome
-categories: foobars
-image: https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/EEF14FD7-4409-419C-B4CF-DE4934C67F1A_eexxp7.jpg
-image_hero: https://res.cloudinary.com/mariposta/image/upload/w_1800,c_limit,q_65/CCAC476B-5D1E-41E5-9F59-F0199DC5F76B_ptiyqo.jpg
+subtitle: Take a look at the source for this post to get an idea about how it works.
+image: https://res.cloudinary.com/mariposta/image/upload/w_1800,c_limit,q_65/EEF14FD7-4409-419C-B4CF-DE4934C67F1A_eexxp7.jpg
+image_hero: https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/EEF14FD7-4409-419C-B4CF-DE4934C67F1A_eexxp7.jpg
 rainbow_hero: true
 author: jared
 ---

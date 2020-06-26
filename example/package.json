@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "bridgetown-quick-search": "1.0.3",
-    "bulmatown": "../bulmatown"
+    "bulmatown": "../../bulmatown"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

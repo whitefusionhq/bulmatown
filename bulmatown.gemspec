@@ -5,10 +5,10 @@ require_relative "lib/bulmatown/version"
 Gem::Specification.new do |spec|
   spec.name          = "bulmatown"
   spec.version       = Bulmatown::VERSION
-  spec.author        = "Bridgetown Team"
-  spec.email         = "maintainers@bridgetownrb.com"
-  spec.summary       = "Sample code for creating new Bridgetown plugins"
-  spec.homepage      = "https://github.com/username/bulmatown"
+  spec.author        = "Jared White"
+  spec.email         = "jared@whitefusion.io"
+  spec.summary       = "A Bumlma CSS starter theme for Bridgetown"
+  spec.homepage      = "https://github.com/whitefusionhq/bulmatown"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend)/!) }
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.5.0"
 
-  spec.add_dependency "bridgetown", ">= 0.14", "< 2.0"
+  spec.add_dependency "bridgetown", ">= 0.15", "< 2.0"
   spec.add_dependency "bridgetown-quick-search", "~> 1.0"
 
   spec.add_development_dependency "bundler"

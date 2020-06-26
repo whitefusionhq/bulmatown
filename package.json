@@ -1,12 +1,12 @@
 {
   "name": "bulmatown",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "frontend/javascript/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/bulmatown.git"
+    "url": "https://github.com/whitefusiohq/bulmatown.git"
   },
-  "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
+  "author": "Jared White <jared@whitefusion.io>",
   "homepage": "https://www.bridgetownrb.com",
   "license": "MIT",
   "private": false,

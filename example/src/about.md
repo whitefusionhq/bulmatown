@@ -2,7 +2,6 @@
 layout: page
 title: About
 subtitle: This is an About page.
-permalink: /about/
 ---
 
 This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)

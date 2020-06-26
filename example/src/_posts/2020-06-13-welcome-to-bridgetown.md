@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Your First Post on Bridgetown"
-subtitle: I was stwollin' thrwoo the pahk one day, in the mewwy mewwy month of May!
+subtitle: You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes!
 date:   2020-06-13 08:39:40 -0700
 categories: updates
-image_hero: https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/EEF14FD7-4409-419C-B4CF-DE4934C67F1A_eexxp7.jpg
-image: https://res.cloudinary.com/mariposta/image/upload/w_1800,c_limit,q_65/CCAC476B-5D1E-41E5-9F59-F0199DC5F76B_ptiyqo.jpg
-rainbow_hero: true
+image: https://res.cloudinary.com/mariposta/image/upload/w_1800,c_limit,q_65/IMG_5232_srqhvl.jpg
+image_hero: https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/IMG_5232_srqhvl.jpg
 author: jared
 ---
 
