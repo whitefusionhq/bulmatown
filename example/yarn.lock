@@ -1533,10 +1533,10 @@ bulma@^0.9:
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.0.tgz#948c5445a49e9d7546f0826cb3820d17178a814f"
   integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
-bulmatown@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.2.tgz#d791813163eb51dbd44c86782545cb8500f47931"
-  integrity sha512-2tPbxIDhi/LSHO6QZP24Jnt/3cAe8fGKb8ArAEjXI9zeiPCgbbj/x56bQc221PgHCC5dbavp/NsNm5wgxUKPRA==
+bulmatown@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.3.tgz#e5e0c8ebde08d138867775cb13501b43d85f6150"
+  integrity sha512-J8Hr6l1WKSuPilict5bMGna8g4Q/j0fGGJbCfKlUx43iS3zFVW9fln+IZdti/v/dC4QKd5bXgbrS1lVb576axg==
   dependencies:
     bridgetown-quick-search "^1.0.3"
     bulma "^0.9"
