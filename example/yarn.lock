@@ -1351,7 +1351,7 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-bridgetown-quick-search@^1.0.3:
+bridgetown-quick-search@1.0.3, bridgetown-quick-search@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/bridgetown-quick-search/-/bridgetown-quick-search-1.0.3.tgz#4fc34dea418fc97ba25f7ccf1aea6cbc7c048d91"
   integrity sha512-IAeldS+EB+AU/3MIr0jvQKBIPR852aRxlM38/cEcs4KDh3v9ML3CtgnCI+48V6UBDb3NFzlKEJ91SSxRz3lyiA==
@@ -1533,10 +1533,10 @@ bulma@^0.9:
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.0.tgz#948c5445a49e9d7546f0826cb3820d17178a814f"
   integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
-bulmatown@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.3.tgz#e5e0c8ebde08d138867775cb13501b43d85f6150"
-  integrity sha512-J8Hr6l1WKSuPilict5bMGna8g4Q/j0fGGJbCfKlUx43iS3zFVW9fln+IZdti/v/dC4QKd5bXgbrS1lVb576axg==
+bulmatown@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.4.tgz#3bdec47c9807ac724819636f32d147499ce68061"
+  integrity sha512-bs401CtVnsobhELXd/mmc9lBBDaOJVm6eFYTvRB3donO3L7V6aRnu9QLJVi2zDQNVTxCIPW5Jj0KnWDtgRxqwA==
   dependencies:
     bridgetown-quick-search "^1.0.3"
     bulma "^0.9"

@@ -1,0 +1,23 @@
+---
+layout: page
+title: Articles by :prototype-data-label
+prototype:
+  term: author
+  data: authors
+  data_label: name
+---
+
+{% assign author = page.author_data %}
+<p class="mb-6 has-text-centered">
+  Connect with
+  {{ author.name }}
+  on the
+  <a href="{{ author.website }}" class="has-text-weight-bold">Web</a>
+  or
+  <a class="has-text-weight-bold" href="https://twitter.com/{{ author.twitter }}">Twitter</a>
+</p>
+
+{% assign posts = paginator.documents %}
+{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
+
+{% render "bulmatown/pagination", paginator: paginator %}

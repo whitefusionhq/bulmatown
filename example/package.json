@@ -12,8 +12,8 @@
     "start": "node start.js"
   },
   "dependencies": {
-    "bridgetown-quick-search": "^1.0.3",
-    "bulmatown": "1.0.3"
+    "bridgetown-quick-search": "1.0.3",
+    "bulmatown": "1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

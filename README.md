@@ -1,7 +1,7 @@
 # Bulmatown
 ## A Bulma CSS starter theme for Bridgetown.
 
-[Bulma](https://bulma.io) is a clean, modern CSS framework for rapid prototyping of content-focused websites. Use this theme to start using Bulma in your new [Bridgetown](https://www.bridgetownrb.com) site quickly, while preserving _all_ of the advanced customizations possibilities as if you configured Bulma manually.
+[Bulma](https://bulma.io) is a clean, modern CSS framework for rapid prototyping of content-focused websites. Use this theme to start using Bulma in your new [Bridgetown](https://www.bridgetownrb.com) site quickly, while preserving _all_ of the advanced customization possibilities as if you configured Bulma manually.
 
 **[LIVE DEMO](https://bulmatown.vercel.app)**
 
@@ -45,6 +45,29 @@ The available options are:
 * `fineart`
 
 Speaking of Sass variables, you can put all your custom Bulma variables right before the `@import` statement and Bulma will pick up all the changes. You can even override any of the variables defined by Bulmatown out-of-the-box. [Read the Bulma documentation for more information.](https://bulma.io/documentation/)
+
+### Hero Banners and Images
+
+Bulmatown will automatically look for `image` and `image_hero` front matter variables in your pages and documents and display those in the hero banners (and in the card component for post previews). Check out the [bridgetown-cloudinary](https://github.com/bridgetownrb/bridgetown-cloudinary) plugin for an easy way to add advanced image asset handling to your site.
+
+In addition, for a fun way to add some sparkle to a hero banner with an image background, you can put `rainbow_hero: true` in your front matter to display a nice colorful gradient.
+
+## Authors
+
+To show author information at the top of a blog post, add `authors.yml` to your data folder. For example:
+
+```yaml
+# src/_data/authors.yml
+jared:
+  name: Jared White
+  avatar: /images/jared-white-avatar.jpg
+  twitter: jaredcwhite
+  website: https://jaredwhite.com
+```
+
+Then simply add `author: jared` to your post's front matter.
+
+This will link to an `/authors/<authorname>` URL. You can create a page at that URL manually, or you can auto-generate author archives using a Prototype Page. ([See this example file.](https://github.com/whitefusionhq/bulmatown/blob/master/example/src/authors/author.html))
 
 ## Overriding Layout Templates and Components
 
