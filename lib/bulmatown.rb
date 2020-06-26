@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "bridgetown"
+require "bulmatown/version"
 
 Bridgetown::PluginManager.new_source_manifest(
   origin: Bulmatown,
