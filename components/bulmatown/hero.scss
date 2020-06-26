@@ -21,6 +21,15 @@ $gradient-bottom-right: transparentize(lighten(saturate(adjust-hue($dark, 10deg)
     background-image: linear-gradient(141deg, var(--overlay-top-left) 0%, var(--overlay-center) 65%, var(--overlay-bottom-right) 100%);
   }
 
+  .container.is-fluid {
+    @include mobile {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .title {
     text-shadow: 0px 2px 3px transparentize($black, 0.5);
   }
