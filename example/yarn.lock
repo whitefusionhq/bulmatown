@@ -1534,9 +1534,9 @@ bulma@^0.9:
   integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
 bulmatown@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.1.tgz#6fde191351b8a29ee7ad679ff2d234414d1bf898"
-  integrity sha512-DH77Xps8EFTuATWTnTQWb1qfknqOuz/mdZ78rQpSleQnMBNY7S/h9C2qc7BuO2ryUSzdv4/WhxklBhAY1PhN5g==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.0.2.tgz#d791813163eb51dbd44c86782545cb8500f47931"
+  integrity sha512-2tPbxIDhi/LSHO6QZP24Jnt/3cAe8fGKb8ArAEjXI9zeiPCgbbj/x56bQc221PgHCC5dbavp/NsNm5wgxUKPRA==
   dependencies:
     bridgetown-quick-search "^1.0.3"
     bulma "^0.9"
