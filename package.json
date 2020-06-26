@@ -1,6 +1,7 @@
 {
   "name": "bulmatown",
-  "version": "1.0.0",
+  "description": "A Bulma CSS starter theme for Bridgetown",
+  "version": "1.0.1",
   "main": "frontend/javascript/index.js",
   "repository": {
     "type": "git",
@@ -11,6 +12,7 @@
   "license": "MIT",
   "private": false,
   "files": [
+    "components",
     "frontend"
   ],
   "dependencies": {

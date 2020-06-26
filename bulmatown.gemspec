@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Bulmatown::VERSION
   spec.author        = "Jared White"
   spec.email         = "jared@whitefusion.io"
-  spec.summary       = "A Bumlma CSS starter theme for Bridgetown"
+  spec.summary       = "A Bulma CSS starter theme for Bridgetown"
   spec.homepage      = "https://github.com/whitefusionhq/bulmatown"
   spec.license       = "MIT"
 
