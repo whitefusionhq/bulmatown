@@ -23,6 +23,12 @@ Or to add it to your existing Bridgetown site:
 bundle exec bridgetown apply https://github.com/whitefusionhq/bulmatown
 ```
 
+A few other (optional) plugins you might be interested in installing:
+
+* [SEO Tag](https://github.com/bridgetownrb/bridgetown-seo-tag)
+* [Atom Feed](https://github.com/bridgetownrb/bridgetown-feed)
+* Check out [Bridgetown community automations](https://github.com/bridgetownrb/automations) for some extra goodies like PurgeCSS, Swup page transitions, a test suite, and more!
+
 ## Usage
 
 The installation process will prompt you to configure your site to use Bulmatown automatically. However, if you decline those changes, you can inspect the [example site](https://github.com/whitefusionhq/bulmatown/tree/master/example) in this repository.
