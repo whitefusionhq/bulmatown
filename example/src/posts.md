@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Articles
+exclude_from_search: true
 pagination:
   enabled: true
 ---
