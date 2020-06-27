@@ -6,6 +6,7 @@ $gradient-bottom-right: transparentize(lighten(saturate(adjust-hue($dark, 10deg)
 .hero {
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
   --overlay-center: #{$center};
   --overlay-top-left: #{$gradient-top-left};
   --overlay-bottom-right: #{$gradient-bottom-right};
