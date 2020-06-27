@@ -54,7 +54,17 @@ Speaking of Sass variables, you can put all your custom Bulma variables right be
 
 ### Hero Banners and Images
 
-Bulmatown will automatically look for `image` and `image_hero` front matter variables in your pages and documents and display those in the hero banners (and in the card component for post previews). Check out the [bridgetown-cloudinary](https://github.com/bridgetownrb/bridgetown-cloudinary) plugin for an easy way to add advanced image asset handling to your site.
+Bulmatown will automatically look for `image` front matter variables in your pages and documents and display those in the hero banners and in the card component for post previews. Check out the [bridgetown-cloudinary](https://github.com/bridgetownrb/bridgetown-cloudinary) plugin for an easy way to add advanced image asset handling to your site.
+
+If you wish, you can alter which variable is loaded for the cards and social embeds vs. the hero banners using metadata:
+
+```yaml
+# src/_data/site_metadata.yml
+bulmatown_theme:
+  image_sizes:
+    embed: image
+    hero: image_hero
+```
 
 In addition, for a fun way to add some sparkle to a hero banner with an image background, you can put `rainbow_hero: true` in your front matter to display a nice colorful gradient.
 
