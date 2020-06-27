@@ -87,6 +87,7 @@ twitter = ask "Do you have a Twitter handle? If so, enter it here, otherwise typ
 if twitter != "" && twitter != "no"
   append_to_file "src/_data/site_metadata.yml" do
     <<~YAML
+
       twitter: #{twitter}
 
     YAML
