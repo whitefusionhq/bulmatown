@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/whitefusionhq/bulmatown"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend)/!) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend|example)/!) }
   spec.test_files    = spec.files.grep(%r!^spec/!)
   spec.require_paths = ["lib"]
   spec.metadata      = { "yarn-add" => "bulmatown@#{Bulmatown::VERSION}" }
