@@ -1,7 +1,10 @@
 # master
 
-* Use this file to keep track of plugin updates
+# 1.0.6 / 2020-10-02
 
-# 0.1.0 / 2020-05-01
+* Remove red border from error syntax #3
+* Remove italics from syntax highlighting #2
 
-* First version
+# 1.0.5 / 2020-06-27
+
+* Wide release
