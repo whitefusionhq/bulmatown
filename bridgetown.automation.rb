@@ -65,9 +65,9 @@ if yes? "The Bulmatown installer can update styles, layouts, and page templates 
 
   create_file "frontend/styles/index.scss", '@import "~bulmatown/frontend/styles"'
   
-  copy_file "example/src/_layouts/home.html", "src/_layouts/home.liquid"
-  copy_file "example/src/_layouts/page.html", "src/_layouts/page.liquid"
-  copy_file "example/src/_layouts/post.html", "src/_layouts/post.liquid"
+  copy_file "example/src/_layouts/home.liquid", "src/_layouts/home.liquid"
+  copy_file "example/src/_layouts/page.liquid", "src/_layouts/page.liquid"
+  copy_file "example/src/_layouts/post.liquid", "src/_layouts/post.liquid"
 
   gsub_file "src/_layouts/default.liquid", '{% render "footer", ', '{% render "footer", url: site.url, '
 
