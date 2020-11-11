@@ -61,8 +61,7 @@ def add_template_repository_to_source_path
 end
 
 def copy_if_exists(file)
-  target = "src/_layouts/#{file}.liquid"
-  target = "src/_layouts/#{file}.html" if File.exist?("src/_layouts/#{file}.html")
+  target = File.exist?("src/_layouts/#{file}.html") ? "src/_layouts/#{file}.html" : "src/_layouts/#{file}.liquid"
   copy_file "example/src/_layouts/#{file}.liquid", target
 end
 
