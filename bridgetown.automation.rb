@@ -36,7 +36,7 @@ ROOT_PATH = if __FILE__ =~ %r{\Ahttps?://}
 DIR_NAME = File.basename(ROOT_PATH)
 
 # DIR_NAME = 'bulmtatown'
-GITHUB_PATH = "https://github.com/whitefusionhq/#{DIR_NAME}.git"
+GITHUB_PATH = "https://github.com/arca0/#{DIR_NAME}.git"
 
 # Copied from: https://github.com/mattbrictson/rails-template
 # Add this template directory to source_paths so that Thor actions like
