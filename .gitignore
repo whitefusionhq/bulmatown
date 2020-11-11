@@ -36,3 +36,4 @@ spec/dest
 .bridgetown-metadata
 .bridgetown-cache
 .bridgetown-webpack
+*.swp
