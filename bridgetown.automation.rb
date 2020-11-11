@@ -60,16 +60,29 @@ def add_template_repository_to_source_path
   end
 end
 
+def copy_if_exists(file)
+  target = "src/_layouts/#{file}.liquid"
+  target = "src/_layouts/#{file}.html" if File.exist?("src/_layouts/#{file}.html")
+  copy_file "example/src/_layouts/#{file}.liquid", target
+end
+
+def substitute_in_default_if_exists
+  if File.exists?("src/_layouts/default.liquid")
+    gsub_file "src/_layouts/default.liquid", '{% render "footer", ', '{% render "footer", url: site.url, '
+  elsif File.exists?("src/_layouts/default.html")
+    gsub_file "src/_layouts/default.html", '{% render "footer", ', '{% render "footer", url: site.url, '
+  else
+    say_status :bulmatown, "Could not find the default template. You will have to add the url parameter to the render command manually"
+  end
+end
+
 if yes? "The Bulmatown installer can update styles, layouts, and page templates to use the new theme. You'll have the option to type 'a' to overwrite all existing files or 'd' to inspect each change. Would you like to proceed? (Y/N)"
   add_template_repository_to_source_path
 
   create_file "frontend/styles/index.scss", '@import "~bulmatown/frontend/styles"'
-  
-  copy_file "example/src/_layouts/home.liquid", "src/_layouts/home.liquid"
-  copy_file "example/src/_layouts/page.liquid", "src/_layouts/page.liquid"
-  copy_file "example/src/_layouts/post.liquid", "src/_layouts/post.liquid"
 
-  gsub_file "src/_layouts/default.liquid", '{% render "footer", ', '{% render "footer", url: site.url, '
+  ["home", "page", "post"].each { |f| copy_if_exists(f) }
+  substitute_in_default_if_exists
 
   copy_file "example/src/index.md", "src/index.md"
   copy_file "example/src/posts.md", "src/posts.md"
