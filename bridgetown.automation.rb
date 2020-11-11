@@ -60,15 +60,20 @@ def add_template_repository_to_source_path
   end
 end
 
+def copy_if_exists(file)
+  target = "src/_layouts/#{file}.liquid"
+  target = "src/_layouts/#{file}.html" if File.exist?("src/_layouts/#{file}.html")
+  puts "Will copy #{file}"
+  copy_file "example/src/_layouts/#{file}.liquid", target
+end 
+
 if yes? "The Bulmatown installer can update styles, layouts, and page templates to use the new theme. You'll have the option to type 'a' to overwrite all existing files or 'd' to inspect each change. Would you like to proceed? (Y/N)"
   add_template_repository_to_source_path
 
   create_file "frontend/styles/index.scss", '@import "~bulmatown/frontend/styles"'
-  
-  copy_file "example/src/_layouts/home.liquid", "src/_layouts/home.liquid"
-  copy_file "example/src/_layouts/page.liquid", "src/_layouts/page.liquid"
-  copy_file "example/src/_layouts/post.liquid", "src/_layouts/post.liquid"
 
+  ["home", "page", "post"].each { |f| copy_if_exists(f) }
+  
   gsub_file "src/_layouts/default.liquid", '{% render "footer", ', '{% render "footer", url: site.url, '
 
   copy_file "example/src/index.md", "src/index.md"
