@@ -3,7 +3,7 @@
 
 [Bulma](https://bulma.io) is a clean, modern CSS framework for rapid prototyping of content-focused websites. Use this theme to start using Bulma in your new [Bridgetown](https://www.bridgetownrb.com) site quickly, while preserving _all_ of the advanced customization possibilities as if you configured Bulma manually.
 
-**[LIVE DEMO](https://bulmatown.vercel.app)**
+**[LIVE DEMO](https://bulmatown.onrender.com)**
 
 ![Bulmatown Example](https://res.cloudinary.com/mariposta/image/upload/c_thumb,w_900/v1593195961/bulmatown/bulmatown-example.jpg)
 
