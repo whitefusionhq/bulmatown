@@ -1,5 +1,6 @@
 ---
 layout: home
+exclude_from_search: true
 ---
 
 Welcome to my site!
