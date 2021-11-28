@@ -2,7 +2,7 @@
 layout: page
 title: Articles
 exclude_from_search: true
-paginator:
+paginate:
   collection: posts
 ---
 
