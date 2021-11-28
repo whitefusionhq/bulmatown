@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Articles by :prototype-data-label
+exclude_from_search: true
 prototype:
+collection: posts
   term: author
   data: authors
   data_label: name
@@ -17,7 +19,7 @@ prototype:
   <a class="has-text-weight-bold" href="https://twitter.com/{{ author.twitter }}">Twitter</a>
 </p>
 
-{% assign posts = paginator.documents %}
+{% assign posts = paginator.resources %}
 {% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
 
 {% render "bulmatown/pagination", paginator: paginator %}

@@ -9,7 +9,7 @@
 
 ## Installation
 
-Bulmatown requires Bridgetown v0.15 or later
+Bulmatown requires Bridgetown v1.0 or later (for >= 1.2), or v0.15 or later (~1.1)
 
 To install Bulmatown while creating a new Bridgetown site:
 

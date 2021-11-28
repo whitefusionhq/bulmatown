@@ -4,11 +4,7 @@
 add_bridgetown_plugin "bulmatown"
 add_bridgetown_plugin "bridgetown-quick-search"
 
-# 0.15 bug! :( can't use this:
-#add_yarn_for_gem "bulmatown"
-
-gem_version = (`bundle info bulmatown`).match(/\*.*\((.*?)\)/)[1]
-run "yarn add bulmatown@#{gem_version}"
+add_yarn_for_gem "bulmatown"
 
 require 'fileutils'
 require 'shellwords'
