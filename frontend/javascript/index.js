@@ -4,7 +4,7 @@ import Bulmatown from "bulmatown"
 
 Bulmatown()
 */
-import "bridgetown-quick-search"
+import "bridgetown-quick-search/dist"
 
 export default function() {
   console.log("Success! The Bulmatown theme has been loaded.")

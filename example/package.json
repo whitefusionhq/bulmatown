@@ -7,7 +7,7 @@
     "webpack-dev": "webpack --mode development -w"
   },
   "dependencies": {
-    "bulmatown": "1.0.5"
+    "bulmatown": "1.2.1"
   },
   "devDependencies": {
     "css-loader": "^4.3.0",
