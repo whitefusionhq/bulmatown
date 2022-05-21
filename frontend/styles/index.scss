@@ -31,7 +31,7 @@ $fullhd-enabled: false !default;
 $box-padding: 1.4rem !default;
 $footer-top-margin: 4rem !default;
 
-@import "~fork-awesome";
+@import "~fork-awesome/scss/fork-awesome.scss";
 @import "~bulma/bulma";
 @import "syntax.scss";
 
