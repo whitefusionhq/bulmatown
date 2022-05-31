@@ -14,7 +14,7 @@ Bulmatown requires Bridgetown v1.0 or later (for >= 1.2), or v0.15 or later (~1.
 To install Bulmatown while creating a new Bridgetown site:
 
 ```sh
-bridgetown new mysite -a https://github.com/whitefusionhq/bulmatown
+bridgetown new mysite --use-sass -a https://github.com/whitefusionhq/bulmatown
 ```
 
 Or to add it to your existing Bridgetown site:
