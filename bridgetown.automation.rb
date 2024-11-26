@@ -62,9 +62,9 @@ def copy_if_exists(file)
 end
 
 def substitute_in_default_if_exists
-  if File.exists?("src/_layouts/default.liquid")
+  if File.exist?("src/_layouts/default.liquid")
     gsub_file "src/_layouts/default.liquid", '{% render "footer", ', '{% render "footer", url: site.url, '
-  elsif File.exists?("src/_layouts/default.html")
+  elsif File.exist?("src/_layouts/default.html")
     gsub_file "src/_layouts/default.html", '{% render "footer", ', '{% render "footer", url: site.url, '
   else
     say_status :bulmatown, "Could not find the default template. You will have to add the url parameter to the render command manually"
@@ -82,7 +82,7 @@ if yes? "The Bulmatown installer can update styles, layouts, and page templates 
   copy_file "example/src/index.md", "src/index.md"
   copy_file "example/src/posts.md", "src/posts.md"
   copy_file "example/src/404.html", "src/404.html"
-  
+
   copy_file "example/src/_components/navbar.liquid", "src/_components/navbar.liquid"
   copy_file "example/src/_components/footer.liquid", "src/_components/footer.liquid"
 
