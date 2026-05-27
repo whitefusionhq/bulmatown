@@ -1,5 +1,10 @@
 # Bulmatown
-## A Bulma CSS starter theme for Bridgetown.
+## A Bulma CSS starter theme for Bridgetown
+
+> [!NOTE]
+> This theme has been sunsetted, but Bridgetown now offers an all-new **first-party** theme called [Willamette](https://willamette.bridgetownrb.com). Please look at that instead! ☺️
+
+----
 
 > [!WARNING]
 > This theme is behind the Bulma 1.x release cycle and hasn't been updated to work with Bridgetown 2.0 and ERB.
@@ -8,7 +13,7 @@
 
 > [!NOTE]
 >
-> **The good news:** I ([@jaredcwhite](https://github.com/jaredcwhite)) am right in the midst of a big theme development project based on [Web Awesome](https://webawesome.com), an incredible new CSS design system & web component library. I expect to release the first public beta well before the end of November 2025. This new theme will serve as a basis for future themes to come.
+> **The good news:** I ([@jaredcwhite](https://github.com/jaredcwhite)) am right in the midst of a big theme development project based on [Web Awesome](https://webawesome.com), an incredible new CSS design system & web component library. I expect to release the first public beta ~~well before the end of November 2025~~ in Q2 2026. This new theme will serve as a basis for future themes to come.
 > 
 > My apologies that this theme project languished. I sort of expected it to be a stopgap until a serious third-party theme market emerged for Bridgetown. That never happened! So now I'm moving forward with a new first-party theme strategy. _Stay tuned._ ✌️
 
